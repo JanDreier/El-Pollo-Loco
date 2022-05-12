@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Pollo Loco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="models/drawable-object.class.js"></script>
+    <script src="models/movable-object.class.js"></script>
+    <script src="models/throwable-object.class.js"></script>
+    <script src="models/status-bar.class.js"></script>
+    <script src="models/energy-bar.class.js"></script>
+    <script src="models/coin-bar.class.js"></script>
+    <script src="models/bottle-bar.class.js"></script>
+    <script src="models/world.class.js"></script>
+    <script src="models/character.class.js"></script>
+    <script src="models/chicken.class.js"></script>
+    <script src="models/cloud.class.js"></script>
+    <script src="models/background-object.class.js"></script>
+    <script src="models/keyboard.class.js"></script>
+    <script src="models/level.class.js"></script>
+    <script src="models/endboss.class.js"></script>
+    <script src="models/coin.class.js"></script>
+    <script src="models/bottle.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="js/game.js"></script>
+</head>
+
+<body>
+    <div id="fullscreen-container">
+        <h1>El Pollo Loco</h1>
+        <div id="canvas-container">
+            <canvas id='canvas' width="720" height="480" class="d-none"></canvas>
+            <button class="button d-none" id="restart-button" onclick="restart()">Restart</button>
+            <img src="img/view-fullscreen.svg" alt="view_fullscreen" id="fullscreen-button" onclick="viewFullscreen()">
+            <div id="controls" class="d-none">
+                <div class="control-item">
+                    <img src="img/arrow_left.svg" alt="image_arrow_left">
+                    <span>Run</span>
+                </div>
+                <div class="control-item">
+                    <img src="img/arrow_right.svg" alt="image_arrow_right">
+                    <span>Run</span>
+                </div>
+                <div class="control-item">
+                    <span><img src="img/arrow_up.svg" alt="image_arrow_up"> / Space</span>
+                    <span>Jump</span>
+                </div>
+                <div class="control-item">
+                    <span>D</span>
+                    <span>Throw Bottle</span>
+                </div>
+            </div>
+        </div>
+        <div id="start-container">
+            <button class="button" id="start-button" onclick="init()">Start</button>
+            <img src="img/9.Intro_OutroImage/Start_Screen/Opcion2.png" alt="start-image">
+        </div>
+    </div>
+
+</body>
+
+</html>
